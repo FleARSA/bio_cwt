@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.navContent {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  padding-left: 100px;
+  padding-top: 25px;
+  padding-right: 100px;
+}
+
+.transparent {
+  background: none;
+  box-shadow: none;
+}
+
+.solid {
+  background-color: #1E0C06;
+  border-radius: 0 0 79px 79px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-left: -1rem;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navLinks {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: -1rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  transition: opacity 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.navLink:hover {
+  opacity: 0.8;
+}
+
+/* Add hover effect for solid navbar */
+.solid .navLink:hover {
+  opacity: 0.8;
+}
+
+
